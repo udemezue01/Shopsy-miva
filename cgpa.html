@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+        <div class="choice-section">
+            <label>
+                <input type="radio" name="calculationType" value="GPA" checked>
+                Calculate GPA
+            </label>
+            <label>
+                <input type="radio" name="calculationType" value="CGPA">
+                Calculate CGPA
+            </label>
+        </div>
+
+        <div id="gpa-section" class="input-section">
+            <h2>Enter Course Details for GPA Calculation</h2>
+            <div id="gpa-courses"></div>
+            <button onclick="addCourse()">Add Course</button>
+            <button onclick="calculateGPA()">Calculate GPA</button>
+            <div id="gpa-result"></div>
+        </div>
+
+        <div id="cgpa-section" class="input-section" style="display: none;">
+            <h2>Enter Previous Semesters' GPAs</h2>
+            <div id="previous-semesters"></div>
+            <button onclick="addSemester()">Add Previous Semester</button>
+            <button onclick="proceedToCurrent()">Proceed to Current Semester</button>
+
+            <div id="current-semester" style="display: none;">
+                <h2>Enter Course Details for Current Semester</h2>
+                <div id="cgpa-courses"></div>
+                <button onclick="addCourse(true)">Add Course</button>
+                <button onclick="calculateCGPA()">Calculate CGPA</button>
+                <div id="cgpa-result"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
