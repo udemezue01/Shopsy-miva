@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.input-section, .choice-section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#previous-semesters, #gpa-courses, #cgpa-courses {
+    margin-bottom: 20px;
+}
+
+.course, .semester {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.course input, .semester input {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
